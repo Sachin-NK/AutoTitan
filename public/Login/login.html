@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" href="car.css">
+
+    <link rel="icon" type="image/icon" href="favicon.ico">
+
+    <title>Auto Titan</title>
+   
+</head>
+<body>
+
+            <!-- header section  -->
+        <header class="header">
+
+            <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+            <a href="../Index(main-Page)/index.html" class="logo">Auto<span>Titan</span></a>
+
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="../Index(main-Page)/index.html">Home</a>
+                <a href="../Vehicles/display.html">Vehicles</a>
+                <a href=" ">services</a>
+                <a href="../Index(main-Page)/index.html#reviews">reviews</a>
+                <a href="../Index(main-Page)/index.html#contact">contact</a>
+                    
+            </nav>
+
+            <!-- login button -->
+            <div id="login-btn">
+                <a href="#">
+                    <button type="button" class="btn">login</button></a>
+            </div>
+
+        </header>
+
+    <div class="wrapper active-popup ">
+        <span class="icon-close"><ion-icon name="close-circle-outline"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+
+        <h2>Login</h2>
+        <form action="your-login-action" method="post">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-unread-outline">
+                </ion-icon></span>
+               
+                <input type="email" required>
+                 <label>Email</label>
+
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">  Remember me</label>
+                <a href="#" >Fogot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+
+            <div class="login-register">
+                <p> Don't have an account?   <a href="#" class="register-link"> Register</a></p>
+            </div>
+           
+        </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="your-login-action" method="post">
+                <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                    </span>
+
+                        
+                    <input type="text" required>
+                     <label>Username</label>
+                </div>
+
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-unread-outline"></ion-icon></span>
+                   
+                    <input type="email" required>
+                     <label>Email</label>
+    
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+    
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions </label>
+                    <a href="#" ></a>
+                </div>
+                <button type="submit" class="btn">Register</button>
+    
+                <div class="login-register">
+                    <p>Already have an account?   <a href="#" class="login-link">Login</a></p>
+                </div>
+               
+            </form>
+            </div>
+    </div>
+
+    <script src="navbar.js"></script>
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

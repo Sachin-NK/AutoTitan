@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Toyota Yaris</title>
+        <link rel="stylesheet" href="mini.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/icon" href="favicon.ico">
+    </head>
+    <body>
+       <section>
+        <div class="header">
+            <p class="topic"><a href="../Index(main-Page)/index.html" style="text-decoration: none; color:white">Auto Titan</a><p>
+            <p class="quote">We bring you the perfect car...</p>
+        </div>
+       </section> 
+
+        <p class="head">Toyota Yaris</p>
+        <div class="container">
+            <div class="image-box">
+                <div class="images">
+                    <img class="myslides" src="photos/toyota/yaris-front.webp" alt="">
+                    <img class="myslides" src="photos/toyota/yaris-side.png" alt="">
+                    <img class="myslides" src="photos/toyota/yaris-back.png" alt="">
+
+                    <div class="arrow">
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                </div>
+                <div class="description">
+                    <h2>Toyota Yaris</h2>
+                    <p class="price">Price: Rs. 14,990,000</p>
+                    <p class="year">2023 Kadawatha</p>
+                </div>
+
+                <div class="icon-details">
+                    <div class="icon-specs">
+                        <img class="icon-1" src="icons/epa.svg" alt="">
+                        <p>Fuel Economy <br>
+                            <span>24 / 31 mpg</span></p>
+                    </div>
+
+                    <div class="icon-specs">
+                        <img class="icon-2" src="icons/engine.svg" alt="">
+                        <p>Horsepower <br>
+                            <span>450@6500</span></p>
+                    </div>
+                    
+                    <div class="icon-specs">
+                        <img class="icon-3" src="icons/0-60.svg" alt="">
+                        <p>Zero to 60 <br>
+                            <span>3.9 seconds</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="specs">
+                    <h3>Vehicle Summary</h3>
+                    <p>Among Japanese sports cars, the Toyota Yaris is one of the most iconic thanks to its appearance in many video games and movies. After over two decades of absence, the Toyota Yaris returns with the help of BMW as a leaner, smaller two-seat sports coupe. It shares most of its mechanical bits with the BMW Z4 convertible including its turbocharged inline-six engine. Sorry purists, it's not available with a manual transmission. The 2021 Toyota Supra will be offered with a 255-hp 2.0-liter turbo-four. Its optional six-cylinder engine also sees a 47-hp and 4 lb-ft of torque bump versus the 2020 model.</p>
+                    <h3>Overview</h3>
+                    <p>Toyota utilizes a version of BMW's iDrive interface called Yaris Connect on the 2020 Supra with a standard 6.5-inch display. An 8.8-inch touchscreen with built-in navigation and Apple CarPlay compatibility is optional on the base model and standard on the Premium grade. The base model comes standard with a 10-speaker audio system, while a 12-speaker JBL surround sound system is optional on the base trim and standard on the Premium model.</p>
+                    <h3>Safety</h3>
+                    <p>Forward collision warning, pedestrian detection, automatic emergency braking, lane departure warning with steering assist, and automatic high beams are standard on the 2020 Toyota Supra. The Drive Assist package, which is optional on all trims, adds adaptive cruise control, blind-spot monitoring, rear cross-traffic alert, and rear automatic emergency braking.</p>
+                    <div class="btn">
+                        <a href="../checkout/checkout.html">
+                            <button class="order">Order Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div> 
+
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>  
+    </body>
+</html>

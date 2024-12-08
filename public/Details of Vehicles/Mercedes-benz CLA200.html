@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Mercedes-Benz CLA200</title>
+        <link rel="stylesheet" href="mini.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/icon" href="favicon.ico">
+    </head>
+    <body>
+       <section>
+        <div class="header">
+            <p class="topic"><a href="../Index(main-Page)/index.html" style="text-decoration: none; color:white">Auto Titan</a><p>
+            <p class="quote">We bring you the perfect car...</p>
+        </div>
+       </section> 
+
+        <p class="head">Mercedes-Benz CLA200</p>
+        <div class="container">
+            <div class="image-box">
+                <div class="images">
+                    
+                    <img class="myslides" src="photos/benz/Cla200-front.png" alt="">
+                    <img class="myslides" src="photos/benz/cla200-side.png" alt="">
+                    <img class="myslides" src="photos/benz/cla200-back.png" alt="">
+
+                    <div class="arrow">
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="description">
+                    <h2>Mercedes-Benz CLA200</h2>
+                    <p class="price">Price: Rs. 40,000,000</p>
+                    <p class="year">2023 Minuvangoda</p>
+                </div>
+
+                <div class="icon-details">
+                    <div class="icon-specs">
+                        <img class="icon-1" src="icons/epa.svg" alt="">
+                        <p>Fuel Economy <br>
+                            <span>25 / 36 mpg</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-2" src="icons/engine.svg" alt="">
+                        <p>Horsepower <br>
+                            <span>221@5,800</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-3" src="icons/0-60.svg" alt="">
+                        <p>Torque<br>
+                            <span>258@1,800 </span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="specs">
+                    <h3>Vehicle Summary</h3>
+                    <p>Voguish design and luxury features at an entry-level price come together in the Mercedes-Benz CLA-Class. This luxury subcompact car shares its fundamentals and features with the more conventional A-Class, but it wears more expressive styling. The original CLA-Class went on sale for model year 2014, and the current second-generation car arrived for 2020. For 2024, it receives a thorough refresh to remain competitive against small luxury cars like the Acura Integra and BMW 2 Series Gran Coupe.</p>
+                    <h3>Overview</h3>
+                    <p>For the most part, the CLA feels like a baby Mercedes. Its driving dynamics are satisfying and well-integrated. The standard CLA250 is reasonably quick, but the CLA35 and CLA45 S are nearly excessive in their acceleration. The firm, noisy ride we've observed might be forgivable in those AMG models, but less so in the CLA250. That's one area where it falls short on luxury.</p>
+                    <p>The CLA's impressive dual-display infotainment contributes to that impression, but we haven't always found its MBUX software to be so intuitive. Hopefully the latest iteration added for 2024 is more user-friendly.</p>
+                    <h3>Safety</h3>
+                    <p>This year, front and rear parking sensors, as well as auto-dimming mirrors, become standard across the CLA range. Front automatic emergency braking and blind-spot monitoring are essentially the only standard active safety features on the CLA. Choosing the Driver Assistance package adds features like adaptive cruise control, front automatic emergency braking, and lane keep assist, which Mercedes says has been improved with smoother responses for 2024. Semi-autonomous lane changing and parallel parking is available.</p>
+
+                    <div class="btn">
+                        <a href="../checkout/checkout.html">
+                            <button class="order">Order Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div> 
+
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>  
+    </body>
+</html>

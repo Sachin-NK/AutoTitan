@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Mercedes-Benz C300</title>
+        <link rel="stylesheet" href="mini.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/icon" href="favicon.ico">
+    </head>
+    <body>
+       <section>
+        <div class="header">
+            <p class="topic"><a href="../Index(main-Page)/index.html" style="text-decoration: none; color:white">Auto Titan</a><p>
+            <p class="quote">We bring you the perfect car...</p>
+        </div>
+       </section> 
+
+        <p class="head">Mercedes-Benz C300</p>
+        <div class="container">
+            <div class="image-box">
+                <div class="images">
+                    
+                    <img class="myslides" src="photos/benz/C300-front.png" alt="">
+                    <img class="myslides" src="photos/benz/c300-side.png" alt="">
+                    <img class="myslides" src="photos/benz/c300-back.png" alt="">
+
+                    <div class="arrow">
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="description">
+                    <h2>Mercedes-Benz C300</h2>
+                    <p class="price">Price: Rs. 12,000,000</p>
+                    <p class="year">2016 Nugeoda</p>
+                </div>
+
+                <div class="icon-details">
+                    <div class="icon-specs">
+                        <img class="icon-1" src="icons/epa.svg" alt="">
+                        <p>Fuel Economy <br>
+                            <span>25 / 36 mpg</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-2" src="icons/engine.svg" alt="">
+                        <p>Horsepower <br>
+                            <span>255@5,800</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-3" src="icons/0-60.svg" alt="">
+                        <p>Torque<br>
+                            <span>295@2,000 </span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="specs">
+                    <h3>Vehicle Summary</h3>
+                    <p>Despite having half the cylinders of its predecessor, the insanely powerful 2024 Mercedes-AMG C63 S E Performance should stomp on the performance of the old V-8-powered C63. And the new model's a plug-in hybrid, too. We're not anticipating any major changes to the standard C300 sedan or C43, but Mercedes-AMG has announced the range-topping C-Class performance model arrives for 2024.</p>
+                    <h3>Overview</h3>
+                    <p>The electric motor has its own two-speed automated transmission while the gas engine uses a nine-speed automatic. So why two transmissions? Mercedes says the nine-speed can only handle about 736 lb-ft of torque and, plus, having the e-motor use its own transmission allows it to distribute torque to the front or rear axle as needed.</p>
+                    <h3>Safety</h3>
+                    <p>addition to the dual front and front-side airbags, the C200 also comes with knee airbags and head airbags for both occupants. Additional standard safety features include Attention Assist, forward collision warning, and BAS brake assist system, which assists the driver by providing additional braking force in the event of an emergency. Lane keeping assist and blind spot warning are available as part of the Lane tracking package while adaptive cruise control is available as a standalone option.</p>
+
+                    <div class="btn">
+                        <a href="../checkout/checkout.html">
+                            <button class="order">Order Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div> 
+
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>  
+    </body>
+</html>

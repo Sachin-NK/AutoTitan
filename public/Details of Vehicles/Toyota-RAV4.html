@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Toyota-RAV4</title>
+        <link rel="stylesheet" href="mini.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/icon" href="favicon.ico">
+    </head>
+    <body>
+       <section>
+        <div class="header">
+            <p class="topic"><a href="../Index(main-Page)/index.html" style="text-decoration: none; color:white">Auto Titan</a><p>
+            <p class="quote">We bring you the perfect car...</p>
+        </div>
+       </section> 
+
+        <p class="head">Toyota RAV4</p>
+        <div class="container">
+            <div class="image-box">
+                <div class="images">
+                    <img class="myslides" src="photos/toyota/rav4-front.png" alt="">
+                    <img class="myslides" src="photos/toyota/rav4-side.png" alt="">
+                    <img class="myslides" src="photos/toyota/rav4-back.png" alt="">
+
+                    <div class="arrow">
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                </div>
+                <div class="description">
+                    <h2>Toyota RAV4</h2>
+                    <p class="price">Price: Rs. 15,000,000</p>
+                    <p class="year">2016 Minuvangoda</p>
+                </div>
+
+                <div class="icon-details">
+                    <div class="icon-specs">
+                        <img class="icon-1" src="icons/epa.svg" alt="">
+                        <p>Fuel Economy <br>
+                            <span>23 / 30 mpg</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-2" src="icons/cargo.svg" alt="">
+                        <p>cargo(Std/Max) <br>
+                            <span>38/73 cu.ft.</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-3" src="icons/0-60.svg" alt="">
+                        <p>Zero to 60 <br>
+                            <span>9.3 seconds</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="specs">
+                    <h3>Vehicle Summary</h3>
+                    <p>Slotting below the three-row Highlander, the 2016 Toyota RAV4 is a compact crossover available in front- or all-wheel-drive configurations, and in either gas-only or hybrid models.</p>
+
+                    
+                    <h3>Overview</h3>
+                    <p>Powering the gas-only 2016 RAV4 is a 2.5-liter I-4 rated at 176 hp and 172 lb-ft of torque paired exclusively to a six-speed automatic transmission. A more powerful hybrid variant takes the 2.5-liter I-4 and pairs it to three electric motors for a combined output of 194 hp. Unlike the gas-only RAV4, the RAV4 Hybrid comes with a CVT instead of a traditional stepped gearbox. The EPA rates the gas-only RAV4's fuel economy based on trim levels with the front-drive LE and XLE being the most efficient at 23/30 mpg city/highway followed by the SE and Limited at 23/29 mpg. Opting for all-wheel drive regardless of the trim drops the gas-only RAV4's fuel economy down to 22/28 mpg. The RAV4 Hybrid, despite being more powerful, is the most fuel efficient at 34/30 mpg city/highway.</p>
+
+                    <p>When properly equipped, the 2016 RAV4 can tow up to 1,500 pounds of payload, while the RAV4 Hybrid has the capacity to haul up to 1,750 pounds. Cargo capacity stands at 38.4 cubic feet behind the split-folding rear seats, and it can be expanded to 73.4 cubic feet. Due to the extra powertrain components, the RAV4 Hybrid has less cargo space at 35.6 cubic feet behind the second row and 70.6 cubic feet behind the front seats.</p>
+                    <h3>Safety</h3>
+                    <p>The NHTSA gave the 2016 RAV4 a five-star overall safety score (out of a possible five stars). In IIHS evaluations, the crossover received a Good score on all crash tests and a Superior rating on the front crash prevention test, allowing it to receive the Top Safety Pick+ award (Good is the highest possible score). The RAV4 also received an Acceptable rating on the IIHS' new headlight safety test when equipped with the available full LED headlights. On higher trims, the 2016 RAV4 can be had with a full suite of active safety and driver assistance features that includes lane departure warning, automatic high beams, forward collision warning, automatic emergency braking, and pedestrian detection.</p>
+
+                    <div class="btn">
+                        <a href="../checkout/checkout.html">
+                            <button class="order">Order Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div> 
+
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>  
+    </body>
+</html>

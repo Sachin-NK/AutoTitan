@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Mercedes-Benz SL55</title>
+        <link rel="stylesheet" href="mini.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/icon" href="favicon.ico">
+    </head>
+    <body>
+       <section>
+        <div class="header">
+            <p class="topic"><a href="../Index(main-Page)/index.html" style="text-decoration: none; color:white">Auto Titan</a><p>
+            <p class="quote">We bring you the perfect car...</p>
+        </div>
+       </section> 
+
+        <p class="head">Mercedes-Benz AMG SL55</p>
+        <div class="container">
+            <div class="image-box">
+                <div class="images">
+                    
+                    <img class="myslides" src="photos/benz/sl55-front.png" alt="">
+                    <img class="myslides" src="photos/benz/sl55-side.png" alt="">
+                    <img class="myslides" src="photos/benz/sl55-back.png" alt="">
+
+                    <div class="arrow">
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="description">
+                    <h2>Mercedes-Benz AMG SL55</h2>
+                    <p class="price">Price: Rs. 23,500,000</p>
+                    <p class="year">2020 Gampaha</p>
+                </div>
+
+                <div class="icon-details">
+                    <div class="icon-specs">
+                        <img class="icon-1" src="icons/torque.svg" alt="">
+                        <p>MPG (EPA) <br>
+                            <span>14 / 21 mpg</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-2" src="icons/engine.svg" alt="">
+                        <p>Horsepower <br>
+                            <span>469@5,500</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-3" src="icons/0-60.svg" alt="">
+                        <p>Torque <br>
+                            <span>516@2,250</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="specs">
+                    <h3>Vehicle Summary</h3>
+                    <p>The new SL-Class is a reconceptualized icon. Never before had Mercedes' flagship convertible been developed straight out of the AMG division. This very fact has several implications for the once-plush roadster, the most significant being that sportiness now takes precedence over outright luxury.</p>
+                    <h3>Overview</h3>
+                    <p>The Mercedes-AMG SL55 offers a 4.0-liter twin-turbocharged V-8 engine making 469 hp and 516 lb-ft of torque. The top-spec SL63 churns out 577 hp and 590 lb-ft of torque because of higher boost pressure, improved internal airflow, and a software upgrade. The result is a 0-60 mph time of 3.1 seconds, according to our tests. A nine-speed automatic transmission sends power to an all-wheel-drive system in both SL variants. The EPA rates the SL55 at 13/21 mpg city/highway while the SL63 takes a slight hit due to its extra power at 14/22 mpg.</p>
+                    <h3>Safety</h3>
+                    <p>Mercedes equips the SL-Class with a variety of active driver assistance features. Automated emergency braking with pedestrian detection, lane departure warning with lane keeping assist, blind-spot monitoring, active LED headlights, high-beam assist, and a 360-degree camera system are included. Forward pre-collision avoidance with cross-traffic monitoring, speed limit assist, blind-spot assist, and adaptive cruise control with a semi-autonomous driving mode are available. </p>
+
+                    <div class="btn">
+                        <a href="../checkout/checkout.html">
+                            <button class="order">Order Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div> 
+
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>  
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Mercedes-AMG E53</title>
+        <link rel="stylesheet" href="mini.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/icon" href="favicon.ico">
+    </head>
+    <body>
+       <section>
+        <div class="header">
+            <p class="topic"><a href="../Index(main-Page)/index.html" style="text-decoration: none; color:white">Auto Titan</a><p>
+            <p class="quote">We bring you the perfect car...</p>
+        </div>
+       </section> 
+
+        <p class="head">Mercedes-Benz AMG E53</p>
+        <div class="container">
+            <div class="image-box">
+                <div class="images">
+                    
+                    <img class="myslides" src="photos/benz/e53-front.png" alt="">
+                    <img class="myslides" src="photos/benz/e53-side.png" alt="">
+                    <img class="myslides" src="photos/benz/e53-back.png" alt="">
+
+                    <div class="arrow">
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="description">
+                    <h2>Mercedes-Benz AMG E53</h2>
+                    <p class="price">Price: Rs. 13,000,000</p>
+                    <p class="year">2014 Minuvangoda</p>
+                </div>
+
+                <div class="icon-details">
+                    <div class="icon-specs">
+                        <img class="icon-1" src="icons/epa.svg" alt="">
+                        <p>Fuel Economy <br>
+                            <span>16 / 22 mpg</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-2" src="icons/engine.svg" alt="">
+                        <p>Horsepower <br>
+                            <span>503@6250</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-3" src="icons/0-60.svg" alt="">
+                        <p>Zero to 60 <br>
+                            <span>3.4 seconds</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="specs">
+                    <h3>Vehicle Summary</h3>
+                    <p>The 2016 Mercedes-Benz AMG GT is a rear-drive two-seat sports coupe that serves as the brand's flagship performance model and is the second vehicle developed solely by Mercedes-AMG.</p>
+                    <h3>Overview</h3>
+                    <p>A twin-turbocharged 4.0-liter V-8 mated to a seven-speed twin-clutch automatic transmission is the only powertrain available. In the AMG GT, the engine produces 456 hp and 443 lb-ft of torque while in the AMG GT S, it's rated at 503 hp and 479 lb-ft. Fuel economy is surprisingly good for such a powerful sports car at 16/22 mpg city/highway.</p>
+
+                        <p>For a sports car, the AMG GT is still somewhat practical, with a trunk that can accommodate 12.3 cubic feet of cargo.</p>
+                    <h3>Safety</h3>
+                    <p>addition to the dual front and front-side airbags, the AMG GT also comes with knee airbags and head airbags for both occupants. Additional standard safety features include Attention Assist, forward collision warning, and BAS brake assist system, which assists the driver by providing additional braking force in the event of an emergency. Lane keeping assist and blind spot warning are available as part of the Lane tracking package while adaptive cruise control is available as a standalone option.</p>
+
+                    <div class="btn">
+                        <a href="../checkout/checkout.html">
+                            <button class="order">Order Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div> 
+
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>  
+    </body>
+</html>

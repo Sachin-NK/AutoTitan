@@ -1,0 +1,465 @@
+/* Importing the 'Poppins' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Root-level CSS variables for color definitions */
+:root {
+  --clr1: #1009c9;          
+  --clr2: rgba(195, 40, 16, 0.577); 
+  --black: #130f40;      
+  --clr3: #e08787;          
+}
+
+/* Global styling for elements */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* Styling for sections with some default padding */
+section {
+  padding: 2rem 6%;
+}
+
+/* Styling for generic buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  background: var(--clr2);
+  padding: .8rem 3rem;
+  color: var(--black);
+  font-size: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--clr1);
+  color: white;
+  transform: scaleX(1.2) scaleY(1.2) translateY(-3px);
+}
+
+#menu-show {
+  display: none;
+}
+
+#menu-btn {
+  display: none;
+  font-size: 2.5rem;
+  color: var(--clr3);
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+/* Styling for the header section */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 9%;
+  padding-top: 2rem;
+}
+
+.header .logo {
+  font-size: 4.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo span {
+  color: var(--clr1);
+}
+
+.header .navbar a {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 580;
+  margin: 0 1.5rem;
+  color: var(--black);
+  border-radius: 18px;
+  overflow: hidden; 
+  padding: 10px;
+}
+.header .navbar a:hover {
+  color: var(--clr1);
+  transform: scaleX(1.4) scaleY(1.4) translateY(-3px);
+  scale: 20px;
+}
+
+.navbar a.active {
+  background-color: var(--clr1); 
+  color: white;
+}
+
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+  margin: .5rem 0;
+}
+
+/* Styling for the home section */
+.home {
+  padding-top: 8rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Styling for a container of icons */
+.icons-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  background: #eee;
+}
+.icons-container:hover div{
+  opacity: 0.6;
+}
+
+.icons-container > div:hover{
+  opacity: 1;
+  transform: scale(1.05);
+}
+.icons-container .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+}
+/* scroll-to-top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: var(--clr1); 
+  color: #ffffff; 
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.scroll-to-top i {
+  font-size: 24px;
+}
+
+/* Styling for icon elements */
+.icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  background: #eee;
+  color: var(--black);
+  text-align: center;
+}
+
+/* Styling for content within the icon container */
+.icons-container .icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  position: relative;
+  margin-top: 10px;
+}
+.icons-container .icons .content h3 {
+  color: var(--clr1);
+  font-size: 2.5rem;
+}
+.icons-container .icons .content p {
+  color: var(--clr3);
+  font-size: 1.5rem;
+}
+
+/* Hover styling for icons */
+.icons-container .icons:hover {
+  background: var(--black);
+}
+
+.icons-container .icons:hover i {
+  background: var(--clr1);
+}
+
+.icons-container .icons:hover .content h3 {
+  color: #fff;
+}
+
+.icons-container .icons:hover .content p {
+  color: #eee;
+}
+
+/* Styling for a heading section */
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 4.5rem;
+  color: var(--black);
+}
+
+.heading span {
+  position: relative;
+  z-index: 0;
+}
+
+/* Styling for a pseudo-element before the span */
+.heading span::before {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--clr1);
+  clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+/* Styling for a section with class 'vehical' and a slider within it */
+.vehical .slider {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+.vehical .slider .activeCircle .fa-circle,
+.vehical .slider .activeCircle .fa-solid {
+  display: none;
+}
+
+.vehical .slider .wrapper {
+  position: relative;
+}
+
+.vehical .slider .wrapper .preNext {
+  cursor: pointer;
+  font-size: 5rem;
+  text-align: center;
+  height: 60%;
+  color: var(--black);
+  z-index: 1;
+}
+
+.vehical .slider .wrapper .preNext#preBtn_4,
+.vehical .slider .wrapper .preNext#preBtn_3,
+.vehical .slider .wrapper .preNext#preBtn_2,
+.vehical .slider .wrapper .preNext#preBtn_1 {
+  position: absolute;
+  width: 30%;
+  padding-top: 10%;
+  top: 0;
+  left: 0%;
+}
+
+.vehical .slider .wrapper .preNext#nextBtn_4,
+.vehical .slider .wrapper .preNext#nextBtn_3,
+.vehical .slider .wrapper .preNext#nextBtn_2,
+.vehical .slider .wrapper .preNext#nextBtn_1 {
+  position: absolute;
+  padding-top: 10%;
+  width: 30%;
+  top: 0;
+  right: 0%;
+}
+
+.vehical .slider .wrapper .wraper-box {
+  display: flex;
+  transition: all .5s ease-in-out;
+  margin-left: 26vw;
+}
+
+.vehical .slider .wrapper .wraper-box .box {
+  width: 300px;
+  text-align: center;
+}
+
+.vehical .slider .wrapper .wraper-box .box img {
+  cursor: pointer;
+  width: 250px;
+  opacity: .5;
+}
+
+.vehical .slider .box .content {
+  margin-top: 5rem;
+  display: none;
+}
+
+.vehical .slider .box .content .fa-circle {
+  color: var(--clr1);
+}
+
+.vehical .slider .wrapper .wraper-box .box.active {
+  width: 100%;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.vehical .slider .wrapper .wraper-box .box.active img {
+  transform: scale(1.8);
+  opacity: 1;
+}
+
+.vehical .slider .wrapper .wraper-box .box.active .content {
+  width: 100%;
+  display: block;
+  font-size: 2rem;
+}
+
+/* Responsive state */
+@media (max-width: 1360px) {
+  html {
+    font-size: 60%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  section .icons-container{
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1112px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header.active {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 950px) {
+  .header #login-btn i {
+    display: block;
+  }
+
+  /* Adjustments for the navbar in smaller screens */
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  #menu-btn.fa-xmark {
+    transform: rotate(180deg);
+  }
+
+  .header.active {
+    padding: 2rem;
+  }
+
+  .vehical .slider .wrapper .wraper-box {
+    margin-left: 20vw;
+  }
+
+  .vehical .slider .wrapper .preNext#preBtn {
+    width: 20vw;
+  }
+
+  .vehical .slider .wrapper .preNext#nextBtn {
+    width: 20vw;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .vehical .slider .wrapper .wraper-box {
+    margin-left: 40vw;
+  }
+
+  .vehical .slider .wrapper .preNext#preBtn {
+    width: 20vw;
+  }
+
+  .vehical .slider .wrapper .preNext#nextBtn {
+    width: 20vw;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  html {
+    font-size: 45%;
+  }
+
+  .vehical .slider .wrapper .wraper-box .box {
+    display: none;
+  }
+
+  .vehical .slider .wrapper .wraper-box .box.active {
+    display: block;
+    margin-left: -15%;
+    margin-right: auto;
+  }
+
+  .vehical .slider .wrapper .wraper-box .box.active img {
+    transform: scale(1);
+  }
+
+  .vehical .slider .wrapper .preNext#preBtn {
+    width: 15%;
+    padding-top: 17%;
+  }
+
+  .vehical .slider .wrapper .preNext#nextBtn {
+    width: 15%;
+    padding-top: 17%;
+  }
+}

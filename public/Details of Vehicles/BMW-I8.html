@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>BMW-I8</title>
+        <link rel="stylesheet" href="mini.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/icon" href="favicon.ico">
+    </head>
+    <body>
+       <section>
+        <div class="header">
+            <p class="topic"><a href="../Index(main-Page)/index.html" style="text-decoration: none; color:white">Auto Titan</a><p>
+            <p class="quote">We bring you the perfect car...</p>
+        </div>
+       </section> 
+
+        <p class="head">BMW I8</p>
+        <div class="container">
+            <div class="image-box">
+                <div class="images">
+                    <img class="myslides" src="photos/bmw/i8-front.png" alt="">
+                    <img class="myslides" src="photos/bmw/i8-side.png" alt="">
+                    <img class="myslides" src="photos/bmw/i8-back.png" alt="">
+
+                    <div class="arrow">
+                        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                    
+                </div>
+                <div class="description">
+                    <h2>BMW I8</h2>
+                    <p class="price">Price: Rs. 35,000,000</p>
+                    <p class="year">2017 Gampaha</p>
+                </div>
+
+                <div class="icon-details">
+                    <div class="icon-specs">
+                        <img class="icon-1" src="icons/epa.svg" alt="">
+                        <p>Fuel Economy <br>
+                            <span>28 / 29 mpg</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-2" src="icons/engine.svg" alt="">
+                        <p>Horsepower <br>
+                            <span>357@5,800</span></p>
+                    </div>
+                    <div class="icon-specs">
+                        <img class="icon-3" src="icons/torque.svg" alt="">
+                        <p>Torque <br>
+                            <span>420@3,700</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="specs">
+                    <h3>Vehicle Summary</h3>
+                    <p>The 2017 BMW i8 is a plug-in hybrid sports car and is one of two models in BMW's i line of electric and plug-in hybrid vehicles. Some of its key distinguishing features include its butterfly doors and flying buttresses that give it a polarizing appearance.</p>
+                    <h3>Overview</h3>
+                    <p>Powering the 2017 BMW i8 is a 1.5-liter turbo-three coupled to three electric motors for a combined output of 357 hp and 420 lb-ft of torque. The only transmission available is a six-speed automatic gearbox. Using EV mode, the i8 is able to travel up to 15 miles, or 76 mpg-e. With a full tank of gas and a fully charged battery, the i8 can travel up to 330 miles, with 28 mpg combined according to the EPA.
+                        Standard features include 20-inch alloy wheels, LED headlights, power front seats, leather/cloth upholstery, navigation, BMW's iDrive interface with an 8.8-inch screen, Bluetooth connectivity, a head-up display, a Harman/Kardon premium audio system, front and rear parking sensors,  a 360-degree view camera system, dual-zone climate control, and keyless entry/start.</p>
+                    <h3>Safety</h3>
+                    <p>The IIHS and NHTSA haven't crash tested the 2017 BMW i8. The Active Driving Assistant is standard in the 2017 i8 and includes forward collision warning, automatic emergency braking, and pedestrian detection.</p>
+
+                    <div class="btn">
+                        <a href="../checkout/checkout.html">
+                            <button class="order">Order Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div> 
+
+        
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>  
+    </body>
+</html>

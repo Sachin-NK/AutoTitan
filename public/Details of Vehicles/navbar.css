@@ -1,0 +1,192 @@
+/* Importing the 'Poppins' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Root-level CSS variables for color definitions */
+:root {
+  --clr1: #1009c9;          
+  --clr2: rgba(195, 40, 16, 0.577); 
+  --black: #130f40;      
+  --clr3: #e08787;          
+}
+
+/* Global styling for elements */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* Styling for sections with some default padding */
+section {
+  padding: 2rem 6%;
+}
+
+/* Styling for generic buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  background: var(--clr2);
+  padding: .8rem 3rem;
+  color: var(--black);
+  font-size: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--clr1);
+  color: white;
+  transform: scaleX(1.2) scaleY(1.2) translateY(-3px);
+}
+
+#menu-show {
+  display: none;
+}
+
+#menu-btn {
+  display: none;
+  font-size: 2.5rem;
+  color: var(--clr3);
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+/* Styling for the header section */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 9%;
+  padding-top: 2rem;
+}
+
+.header .logo {
+  font-size: 4.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo span {
+  color: var(--clr1);
+}
+
+.header .navbar a {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 580;
+  margin: 0 1.5rem;
+  color: var(--black);
+  border-radius: 18px;
+  overflow: hidden; 
+  padding: 10px;
+}
+.header .navbar a:hover {
+  color: var(--clr1);
+  transform: scaleX(1.4) scaleY(1.4) translateY(-3px);
+}
+
+.navbar a.active {
+  background-color: var(--clr1); 
+  color: white;
+}
+
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+  margin: .5rem 0;
+}
+
+
+/* Responsive state */
+@media (max-width: 1360px) {
+  html {
+    font-size: 60%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1112px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header.active {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 950px) {
+  .header #login-btn i {
+    display: block;
+  }
+
+  /* Adjustments for the navbar in smaller screens */
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .header .navbar a:hover {
+    color: var(--clr1);
+    transform: none;
+
+  }
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  #menu-btn.fa-xmark {
+    transform: rotate(180deg);
+  }
+
+  .header.active {
+    padding: 2rem;
+  }
+
+}
