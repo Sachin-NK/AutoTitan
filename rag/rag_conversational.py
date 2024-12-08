@@ -23,8 +23,6 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 db = Chroma(persist_directory=persistent_directory, embedding_function=embeddings)
 
 # Create a retriever for querying the vector store
-# `search_type` specifies the type of search (e.g., similarity)
-# `search_kwargs` contains additional arguments for the search (e.g., number of results to return)
 retriever = db.as_retriever(
     search_type="similarity",
     search_kwargs={"k": 3},
@@ -33,9 +31,9 @@ retriever = db.as_retriever(
 # Create a ChatOpenAI model
 llm = ChatOpenAI(model="gpt-4o")
 
-# Contextualize question prompt
-# This system prompt helps the AI understand that it should reformulate the question
-# based on the chat history to make it a standalone question
+#Contextualize question prompt
+ #This system prompt helps the AI understand that it should reformulate the question
+ #based on the chat history to make it a standalone question 
 contextualize_q_system_prompt = (
     "Given a chat history and the latest user question "
     "which might reference context in the chat history, "
@@ -61,7 +59,6 @@ history_aware_retriever = create_history_aware_retriever(
 
 # Answer question prompt
 # This system prompt helps the AI understand that it should provide concise answers
-# based on the retrieved context and indicates what to do if the answer is unknown
 qa_system_prompt = (
     "You are an assistant for question-answering tasks. Use "
     "the following pieces of retrieved context to answer the "
@@ -82,7 +79,6 @@ qa_prompt = ChatPromptTemplate.from_messages(
 )
 
 # Create a chain to combine documents for question answering
-# `create_stuff_documents_chain` feeds all retrieved context into the LLM
 question_answer_chain = create_stuff_documents_chain(llm, qa_prompt)
 
 # Create a retrieval chain that combines the history-aware retriever and the question answering chain
