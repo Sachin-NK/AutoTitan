@@ -5,8 +5,8 @@
 :root {
   --rgba(16, 9, 201, 1);          
   --clr2: rgba(195, 40, 16, 0.577); 
-  --black: #130f40;      
-  --clr3: #e08787;          
+  --black: rgba(19, 15, 64, 1);      
+  --clr3: rgba(224, 135, 135, 1);          
 }
 
 /* Global styling for elements */
