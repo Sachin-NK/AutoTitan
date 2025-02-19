@@ -3,7 +3,7 @@
 
 /* Root-level CSS variables for color definitions */
 :root {
-  --clr1: #1009c9;          
+  --rgba(16, 9, 201, 1);          
   --clr2: rgba(195, 40, 16, 0.577); 
   --black: #130f40;      
   --clr3: #e08787;          
