@@ -1,6 +1,6 @@
-# Car Rental
+# AutoTitan
 
-Welcome to the Car Rental System! This application provides a comprehensive platform for users to browse available cars, book them, and manage rentals efficiently. Additionally, a chatbot is integrated to assist users with queries and provide support.
+Welcome to the AutoTitan! This application provides a comprehensive platform for users to browse available cars, book them, and manage rentals efficiently. Additionally, a chatbot is integrated to assist users with queries and provide support.
 
 ## Features
 Car Listing: Browse cars categorized by brand.
